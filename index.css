@@ -360,4 +360,11 @@ section {
     .grid-fotos img {
     width: 100%;
   }
+    ::-webkit-scrollbar {
+    display: none;
+  }
+
+  html {
+    scrollbar-width: none;
+  }
 }
