@@ -13,6 +13,8 @@ body {
   padding: 0;
   background-color: var(--blanco-suave);
   color: var(--gris-texto);
+  overflow-x: hidden;
+/*   width: 100%; */
 }
 
 /* .navbar{
@@ -57,7 +59,7 @@ body {
 
 .nav-links a {
   text-decoration: none;
-  color: var(--gris-texto);
+  color: var(--beige-natural);
   font-size: 17px;
   padding: 8px 24px;
   border-radius: 30px;
