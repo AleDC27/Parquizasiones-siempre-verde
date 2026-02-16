@@ -368,4 +368,12 @@ section {
   html {
     scrollbar-width: none;
   }
+  .inicio {
+  div {
+    h1 {
+      font-size: 45px;
+      padding: 0 15px;
+    }
+  }
+}
 }
