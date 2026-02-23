@@ -93,6 +93,7 @@ body {
   padding-top: 60px;
   display: flex;
   flex-direction: column;
+  gap: 50px;
 }
 section {
   scroll-margin-top: 70px;
@@ -102,9 +103,9 @@ section {
   display: flex;
   width: 100%;
   div {
-      background-image: 
-    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("/IMG/img 8.jpeg");
+    background-image:
+      linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url("/IMG/img 8.jpeg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -211,7 +212,6 @@ section {
   }
 }
 
-
 .about {
   padding: 50px 20px;
 }
@@ -232,9 +232,8 @@ section {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  h1{
+  h1 {
     text-align: center;
-    
   }
 }
 
@@ -245,7 +244,7 @@ section {
 }
 
 .grid-fotos img {
-  width:25%; /* 2 columnas */
+  width: 25%; /* 2 columnas */
   height: 250px;
   object-fit: cover;
   transition: 0.3s ease;
@@ -254,7 +253,6 @@ section {
   transform: scale(1.05);
   cursor: pointer;
 }
-
 
 .lightbox {
   display: none;
@@ -301,6 +299,59 @@ section {
 
 .lightbox .next {
   right: 20px;
+}
+
+.about-container {
+  background-color: rgb(167, 132, 132);
+  display: flex;
+  justify-content: space-around;
+}
+.about-container-1 {
+  background-color: rgb(148, 167, 132);
+  div {
+    background-image: url(/IMG/img\ 12.jpeg);
+background-size: contain;
+background-position: center;
+background-repeat: no-repeat;
+    object-fit: contain;
+    height: 500px;
+  }
+}
+.about-container-2 {
+  background-color: rgb(132, 163, 167);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  div {
+    display: flex;
+    flex-wrap: wrap;
+    li {
+      background-color: #e7dddd;
+      margin: 25px;
+      width: 250px;
+      list-style: none;
+      display: flex;
+      align-items: center;
+      img {
+        border-radius: 50%;
+        background-color: #858383;
+        height: 50px;
+      }
+      div {
+        padding: 0 15px;
+        h4 {
+          margin: 10px 0 0 0;
+        }
+        p {
+          overflow-wrap: break-word; /* rompe palabras largas */
+          word-break: break-word; /* compatibilidad */
+          white-space: normal;
+        }
+      }
+    }
+  }
 }
 
 @media (max-width: 768px) {
@@ -362,14 +413,12 @@ section {
     flex-direction: column;
   }
   .about-text,
-
   .grid-fotos {
     gap: 10px;
     img {
       width: 100%;
       height: 300px;
     }
-    
   }
   ::-webkit-scrollbar {
     display: none;
@@ -379,11 +428,11 @@ section {
     scrollbar-width: none;
   }
   .inicio {
-  div {
-    h1 {
-      font-size: 45px;
-      padding: 0 15px;
+    div {
+      h1 {
+        font-size: 45px;
+        padding: 0 15px;
+      }
     }
   }
-}
 }
